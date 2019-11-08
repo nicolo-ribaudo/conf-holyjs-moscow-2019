@@ -1,0 +1,21 @@
+{
+  "name": "live-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "input.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "echo \"input.js\\nplugin.js\" | entr -s './node_modules/.bin/babel input.js &> output.js'",
+    "clean": "rm __test__/fixtures/*/output.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "babel-plugin-tester": "^7.0.1",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {}
+}
